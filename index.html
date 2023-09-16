@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MalfaWeb</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+    <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
+    <!-- Scroll nmav -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="js/animation.js"></script>
+         <!-- Iconos de fontawesome -->
+         <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Animación del cursor -->
+        <div class="cursor"></div>
+        <!-- Toggle de asidebar -->
+        <div class="toggle" style="display: none;">
+            <!-- <i class="fa fa-arrows"></i> -->
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <i class="fa fa-caret-down fa-beat-fade" style="font-size: 50px;" id="open"></i>
+            <i class="fa fa-xing" style="font-size: 45px;" id="close"></i>
+        </div>
+        
+        <!-- Creación de header -->
+        <header id="test">
+            <div class="container__header">
+                <!-- se crea el contenedor del logo -->
+                <div class="logo">
+                    <!-- <img src="media/logo.JPG" alt="" srcset=""> -->
+                    <!-- <ion-icon name="globe-outline"> </ion-icon> -->
+                    <i class="fa fa-globe fa-2xl"></i> Malfaweb
+                </div>
+                <!-- Se crea contenedor del menu -->
+                <div class="menu">
+                    <nav >
+                        <ul >
+                            <li ><a id="navScroll1" href="#">Sobre mi</a></li>
+                            <li><a  id="navScroll2" href="#">Portafolio</a></li>
+                            <li><a id="navScroll"href="#">Skills</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Contenedor call to action en contacto -->
+                <div class="header__register">
+                    <a href="#" class="btn__header-contact" ><i class="fa fa-whatsapp">Contactame</i>  </a>
+                </div>
+                <!-- Nav Responsive -->
+            
+                    <div class="menu__responsive" style="display: none; transition: width all ease-in-out 0.35s !important;">
+                        <ul>
+                            <li class="menu__responsive-list active">
+                                <a href="#" >
+                                    <i class="fa fa-user icon"></i>
+                                    <span class="title">Sobre mi</span>
+                                </a>
+                            </li>
+                            <li class="menu__responsive-list">
+                                <a href="#" >
+                                    <i class="fa fa-folder-open icon"></i>
+                                    <span class="title">Portafolio</span>
+                                </a>
+                            </li>
+                            <li class="menu__responsive-list">
+                                <a href="#" >
+                                    <i class="fa fa-bolt icon"></i>
+                                    <span class="title">Skill</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            
+            </div>
+        </header>
+       
+        <!-- Creacionm del Main container -->
+        <main>
+           
+            <!-- Se crea conmtenedor para el cover -->
+            <div class="cover">
+                <!-- Contenmedor con la información textual -->
+                <div class="text__information-cover">
+                    <h1>Desarrollador web Full Stack</h1>
+                    <p>¡Hola! Soy Andrés, también conocido como "MalfaWeb". Me especializo como desarrollador web full stack. <br>Tengo experiencia tanto en el front-end como en el back-end, lo que me permite diseñar y desarrollar sitios web y aplicaciones web.
+                        <br>
+                    </p>
+                    <!-- Contenedores para links call to action (Descargar CV y boton de whattsap) -->
+                    <div class="buttons__cover">
+                        <!-- Boton descarga de CV -->
+                        <a href="#" download="CV-2023_Malfavaun_Tapia_Andres_Alexis.pdf" class="btn__cv-cover">Descargar CV <i class="fa fa-user"></i></a>
+                        <a href="#" class="btn__whattsap-cover">Enviar Mensaje <i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contenedor con animacion -->
+                <div class="media__cover">
+                    <video src="media/animacion_cover.webm" autoplay playinline loop muted preload="auto"></video>
+                </div>
+
+            </div>
+       
+            <!-- Se crea el contenmedor del banner -->
+            <div class="container__banner">
+                <!-- Contenmedor conm banners -->
+                <div class="banner">
+                    <!-- Contenmedor con ban heart -->
+                    <div class="banner__icon-heart">
+                        <img src="" alt="">
+                    </div>
+                    <!-- conmtenmedor de banner del fuego -->
+                    <div class="banner__icon-fire">
+                        <img src="" alt="">
+                    </div>
+                    <!-- Contenedor con banner text -->
+                    <div class="banner__text">
+                        <h2>Si estás buscando a alguien comprometido y competente para tu proyecto web, ¡estoy aquí para ayudarte a lograr tus objetivos!</h2>
+                        <a href="">contactar</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Iconos de fontawesome -->
+        <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
+        <!-- Animacion del navbar(header) cambie de color al hacer scroll -->
+        <script src="js/nav-animation.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- Anmimacionm cursor -->
+        <script src="js/cursor-animate.js"></script>
+        <!-- Animacionm sidebar menmu -->
+        <script src="js/animate-menu-aside-toggle.js"></script>
+
+        
+    </body>
+</html>
