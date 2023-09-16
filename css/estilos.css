@@ -170,6 +170,9 @@ header{
         margin-top: 40px;
         justify-content: center;
       }
+      .text__information-cover h1{
+        font-size: 35px;
+      }
 
   }
 /* Estilos navbar */
