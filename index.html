@@ -5,17 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MalfaWeb</title>
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
         <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
-    <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
-    <!-- Scroll nmav -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+        <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
+        <!-- Scroll nmav -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <script src="js/animation.js"></script>
+        <script src="js/animation.js"></script>
          <!-- Iconos de fontawesome -->
          <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
+        <!-- Preloader -->
+        <div id="container__loader">
+            <div id="loader"></div>
+        </div>
         <!-- Animación del cursor -->
         <div class="cursor"></div>
         <!-- Toggle de asidebar -->
@@ -33,40 +40,42 @@
                 <div class="logo">
                     <!-- <img src="media/logo.JPG" alt="" srcset=""> -->
                     <!-- <ion-icon name="globe-outline"> </ion-icon> -->
-                    <i class="fa fa-globe fa-2xl"></i> Malfaweb
+                    <a href="#" style="text-decoration: none; color: #000;">
+                        <i class="fa-solid fa-globe fa-2xl"></i> Malfaweb
+                    </a>
                 </div>
                 <!-- Se crea contenedor del menu -->
                 <div class="menu">
                     <nav >
                         <ul >
-                            <li ><a id="navScroll1" href="#">Sobre mi</a></li>
-                            <li><a  id="navScroll2" href="#">Portafolio</a></li>
-                            <li><a id="navScroll"href="#">Skills</a></li>
+                            <li ><a id="navScroll1" href="#sobremi">Sobre mi</a></li>
+                            <li><a  id="navScroll2" href="#portafolio">Portafolio</a></li>
+                            <li><a id="navScroll"href="#skills">Skills</a></li>
                         </ul>
                     </nav>
                 </div>
                 <!-- Contenedor call to action en contacto -->
                 <div class="header__register">
-                    <a href="#" class="btn__header-contact" ><i class="fa fa-whatsapp">Contactame</i>  </a>
+                    <a href="https://wa.me/525637269723?text=Quiero%20contactarme%20contigo%20para%20oferta%20laboral" class="btn__header-contact" ><i class="fa fa-whatsapp"></i> Contactame </a>
                 </div>
                 <!-- Nav Responsive -->
             
                     <div class="menu__responsive" style="display: none; transition: width all ease-in-out 0.35s !important;">
                         <ul>
                             <li class="menu__responsive-list active">
-                                <a href="#" >
+                                <a href="#sobremi" >
                                     <i class="fa fa-user icon"></i>
                                     <span class="title">Sobre mi</span>
                                 </a>
                             </li>
                             <li class="menu__responsive-list">
-                                <a href="#" >
+                                <a href="#portafolio" >
                                     <i class="fa fa-folder-open icon"></i>
                                     <span class="title">Portafolio</span>
                                 </a>
                             </li>
                             <li class="menu__responsive-list">
-                                <a href="#" >
+                                <a href="#skills" >
                                     <i class="fa fa-bolt icon"></i>
                                     <span class="title">Skill</span>
                                 </a>
@@ -91,8 +100,8 @@
                     <!-- Contenedores para links call to action (Descargar CV y boton de whattsap) -->
                     <div class="buttons__cover">
                         <!-- Boton descarga de CV -->
-                        <a href="#" download="CV-2023_Malfavaun_Tapia_Andres_Alexis.pdf" class="btn__cv-cover">Descargar CV <i class="fa fa-user"></i></a>
-                        <a href="#" class="btn__whattsap-cover">Enviar Mensaje <i class="fa fa-whatsapp"></i></a>
+                        <a href="docs/cv.pdf" target="_blank" download="CV-2023_Malfavaun_Tapia_Andres_Alexis.pdf" class="btn__cv-cover">Descargar CV <i class="fa fa-user"></i></a>
+                        <a href="https://wa.me/525637269723?text=Quiero%20contactarme%20contigo%20para%20oferta%20laboral" class="btn__whattsap-cover">Enviar Mensaje <i class="fa fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -102,30 +111,171 @@
                 </div>
 
             </div>
-       
-            <!-- Se crea el contenmedor del banner -->
-            <div class="container__banner">
-                <!-- Contenmedor conm banners -->
-                <div class="banner">
-                    <!-- Contenmedor con ban heart -->
-                    <div class="banner__icon-heart">
-                        <img src="" alt="">
-                    </div>
-                    <!-- conmtenmedor de banner del fuego -->
-                    <div class="banner__icon-fire">
-                        <img src="" alt="">
-                    </div>
-                    <!-- Contenedor con banner text -->
-                    <div class="banner__text">
-                        <h2>Si estás buscando a alguien comprometido y competente para tu proyecto web, ¡estoy aquí para ayudarte a lograr tus objetivos!</h2>
-                        <a href="">contactar</a>
-                    </div>
+
+            <section>
+                <!-- Contenedor de la card de la informacion acerca de mi -->
+                
+                <a name="sobremi"></a>
+                <div class="main__card " >
+                        <h3 class="skills">Sobre mi</h3>
+                            <div class="card " >
+                                <div class="card__imgbox">
+                                    <img src="media/perf.png" alt="">
+                                </div>
+                                <div class="card__details">
+                                    <div class="card__details-title">
+                                        <h2>Andres Alexis Malfavaun Tapia</h2>
+                                    </div>
+                                    <div class="card__details-description">
+                                        <p>
+                                            Soy Malfaweb, un desarrollador web con experiencia en tecnologías clave como PHP, JavaScript, HTML, CSS, Git, GitHub, MySQL, Figma, Linux y Scrum. Mi enfoque es crear sitios web y aplicaciones atractivas y funcionales. Utilizo HTML y CSS para diseñar interfaces de usuario atractivas y JavaScript para añadir interactividad. Git y GitHub son esenciales en mi flujo de trabajo para el control de versiones y colaboración. Además, tengo experiencia en el desarrollo de aplicaciones web respaldadas por PHP y bases de datos MySQL, priorizando la seguridad y el rendimiento. Implemento la metodología Scrum para una gestión de proyectos ágil y entregas eficientes en sistemas Linux, y utilizo Figma para el diseño de interfaces.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                
+            </section>
+        </main>
+        <br><br><br><br> 
+        <br><br><br><br> 
+        <a name="portafolio"></a> 
+        <section class="bodyy-portfolio">
+            <h3 class="skills">portafolio</h3>
+            <div class="container__portfolio" >
+                <div class="container__portfolio__content">
+                    <section class="container__portfolio__card">
+                        <a href="#¿https://www.fese.org.mx/" target="_blank">
+                            <div class="image__card-content">
+                                <b>Optimización SEO</b>
+                                <span>Las tecnologias implementadas son  javascript ,  HTML5,  css3,  pagespeed insights</span>
+                                    <img src="media/proyecto2/fese3.jpg" alt="HTML" width="100%">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="container__portfolio__card">
+                        <a href="http://forosdevinculacion.anuies.mx" target="_blank">
+                            <div class="image__card-content">
+                                <b>Sistema Foros de Vinculación</b>
+                                <span>Las tecnologias implementadas son  javascript ,  HTML5,css3, bootstrap, php, mysql</span>
+
+                                    <img src="media/foros.PNG" alt="HTML" style="width: 90%;">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="container__portfolio__card">
+                        <a href="http://concursoepv.cua.uam.mx" target="_blank">
+                            <div class="image__card-content">
+                                <b>Sistema de Educación Dual</b>
+                                <span>Las tecnologias implementadas son  javascript ,  HTML5,css3, bootstrap, php, mysql</span>
+
+                                    <img src="media/dual.PNG" alt="HTML" style="width: 90%;">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="container__portfolio__card">
+                        <a href="#">
+                            <div class="image__card-content">
+                                <b>Tienda Online</b>
+                                <span>Las tecnologias implementadas son  javascript ,  HTML5,  css3,  MySQL,  php,  bootstrap</span>
+                                    <img src="media/proyecto3/t2.jpg" alt="HTML">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="container__portfolio__card">
+                        <a href="https://top-peliculas-que-tienes-que-ver-uamitos.netlify.app/index.html" target="_blank">
+                            <div class="image__card-content">
+                                <b>Aplicacion Web Con implementación de API</b>
+                                <span>Las tecnologias implementadas son  javascript ,  HTML5,css3</span>
+
+                                    <img src="media/proyecto4/gtextos1.jpg" alt="HTML">
+                            </div>
+                        </a>
+                    </section>
+                   
                 </div>
             </div>
-        </main>
+        </section> 
+        <a name="skills"></a>
+        <br><br><br><br><br>
+        <section class="bodyy">
+            <h3 class="skills">Skills</h3>
+            <div class="container__portfolio" >
+                <div class="container__portfolio__content">
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/html.svg" alt="HTML">
+                                <span>HTML 5</span>
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/css.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/js.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/php.svg" alt="PHP" style="margin-top: 25px;">
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/mysql.svg" alt="">
+                                <span style="font-size: 20px; text-align: center;">MySQL</span> 
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/git.svg" alt="">
+                                <span>GIT GitHub</span>
+                            </div>
+                    </section>
+                    <section class="container__portfolio__card html5s">
+                            <div class="image__card-content">
+                                <img src="media/figma.svg" alt="">
+                                <span>FIGMA</span>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    
 
+        <!-- Footer -->
+        <footer>
+            <section class="footers">
+                <!-- <h2>Contactame:</h2> -->
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-malfavaun-559594186/"><i class="fa fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/Katashikunomo"><i class="fa-brands fa-square-github fa-2x " style="color: #ffffff;"></i></a>
+                <a href="mailto:elcorreoquequieres@correo.com"><i class="fa fa-envelope fa-2x " style="color: #ffffff;"></i></a>
+                <a href="https://wa.me/525637269723?text=Quiero%20contactarme%20contigo%20para%20oferta%20laboral"><i class="fa-brands fa-square-whatsapp fa-2x " style="color: #ffffff;"></i></a>
+                </div>
+                <!-- <h2>Contáctanos:</h2>
+                <div class="contact-form">
+                  <form action="#" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="correo" placeholder="Correo Electrónico">
+                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                  </form>
+                </div> -->
+                <p style="color :#fff; margin-top: 50px;"> Todos los derechos reservados - Malfaweb - 2023</p>
+        
+            </section>
 
+        </footer>
         <!-- Iconos de fontawesome -->
+        
+        <script src="https://kit.fontawesome.com/fcfd08adbe.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/bc365c36ca.js" crossorigin="anonymous"></script>
         <!-- Animacion del navbar(header) cambie de color al hacer scroll -->
         <script src="js/nav-animation.js"></script>
@@ -135,6 +285,10 @@
         <!-- Animacionm sidebar menmu -->
         <script src="js/animate-menu-aside-toggle.js"></script>
 
-        
+        <!-- Preloader -->
+        <script src="js/pre-loader.js"></script>
+        <!--Scrolling  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js/scrolling.js"></script>
     </body>
 </html>
